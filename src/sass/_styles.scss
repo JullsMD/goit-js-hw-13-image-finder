@@ -1,0 +1,90 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  font-family:cursive;
+
+  padding: 30px;
+}
+
+input {
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  width: 600px;
+  height: 50px;
+  border: 1px solid rosybrown;
+  border-width: 5px;
+  border-radius: 10px;
+  color: purple;
+  font-weight: 700;
+  font-size: 25px;
+  line-height: 26px;
+  letter-spacing: 0.03em;
+}
+
+.gallery {
+  list-style: none;
+  margin-left: auto;
+  margin-right: auto;
+  justify-content: center;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+img {
+  display: block;
+  object-fit: cover;
+  transition: transform 0.4s ease-in-out;
+  margin: 10px;
+}
+
+.photo-card img:hover {
+  transform: scale(1.05);
+}
+.stats {
+  display: flex;
+  justify-content: center;
+}
+
+.stats-item:not(:last-child) {
+  margin-right: 10px;
+}
+
+.stats-item {
+  display: flex;
+  text-align: center;
+  margin: 10px 0 20px;
+}
+
+.material-icons {
+  margin-right: 10px;
+}
+
+.loadMore {
+  margin: 25px auto;
+  width: 600px;
+  background-color: rosybrown;;
+  color: purple;
+  font-size: x-large;
+  font-weight: bolder;
+  border-radius: 35px;
+  padding-top: 10px;
+  padding-right: 22px;
+  padding-bottom: 10px;
+  padding-left: 22px;
+  cursor: pointer;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  outline-style: none;
+  &:hover {
+    color: rosybrown;
+    background-color: purple;
+  }
+}
