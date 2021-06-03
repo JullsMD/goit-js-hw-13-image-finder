@@ -1,0 +1,110 @@
+html {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
+}
+
+body {
+  font-family: cursive;
+  padding: 30px;
+}
+
+input {
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  width: 600px;
+  height: 50px;
+  border: 1px solid rosybrown;
+  border-width: 5px;
+  border-radius: 10px;
+  color: purple;
+  font-weight: 700;
+  font-size: 25px;
+  line-height: 26px;
+  letter-spacing: 0.03em;
+}
+
+.gallery {
+  list-style: none;
+  margin-left: auto;
+  margin-right: auto;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+img {
+  display: block;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -webkit-transition: -webkit-transform 0.4s ease-in-out;
+  transition: -webkit-transform 0.4s ease-in-out;
+  transition: transform 0.4s ease-in-out;
+  transition: transform 0.4s ease-in-out, -webkit-transform 0.4s ease-in-out;
+  margin: 10px;
+}
+
+.photo-card img:hover {
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
+}
+
+.stats {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.stats-item:not(:last-child) {
+  margin-right: 10px;
+}
+
+.stats-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  text-align: center;
+  margin: 10px 0 20px;
+}
+
+.material-icons {
+  margin-right: 10px;
+}
+
+.loadMore {
+  margin: 25px auto;
+  width: 600px;
+  background-color: rosybrown;
+  color: purple;
+  font-size: x-large;
+  font-weight: bolder;
+  border-radius: 35px;
+  padding-top: 10px;
+  padding-right: 22px;
+  padding-bottom: 10px;
+  padding-left: 22px;
+  cursor: pointer;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  outline-style: none;
+}
+
+.loadMore:hover {
+  color: rosybrown;
+  background-color: purple;
+}
+/*# sourceMappingURL=main.css.map */

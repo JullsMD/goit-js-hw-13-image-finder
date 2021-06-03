@@ -13,6 +13,8 @@ let page = 1;
 refs.loadMore.style.display = 'none';
 
 export const getSubmitForm = e => {
+  page = 1;
+  console.log(page);
   e.preventDefault();
   refs.galleryList.innerHTML = '';
   inputValue = e.target.elements.query.value.trim();
@@ -23,7 +25,6 @@ export const getSubmitForm = e => {
           ? (refs.loadMore.style.display = 'block')
           : (refs.loadMore.style.display = 'none');
           markupTpl(images);
-          page =1;
       })
       .catch(error => console.log(error));
   }
