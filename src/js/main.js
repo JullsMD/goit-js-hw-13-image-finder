@@ -23,6 +23,7 @@ export const getSubmitForm = e => {
           ? (refs.loadMore.style.display = 'block')
           : (refs.loadMore.style.display = 'none');
           markupTpl(images);
+          page =1;
       })
       .catch(error => console.log(error));
   }
@@ -38,7 +39,8 @@ export const moreImages = () => {
         block: 'end',
       });
     })
-    .catch(error => caonsole.log(error));
+    .catch(error => console.log(error));
+    console.log(page);
 };
 
 export default function onOpenModal(event) {
